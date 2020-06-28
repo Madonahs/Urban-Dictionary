@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="model"
+            type="com.madonasyombua.dictionaryurban.data.response.Word" />
+
+
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/word_definition"
+                android:layout_width="272dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/eight_dp"
+                android:layout_marginRight="@dimen/eight_dp"
+                android:layout_marginBottom="3dp"
+                android:lines="2"
+                android:text="@{model.definition}"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/author_text_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/author_text_view"
+                android:layout_width="214dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="@dimen/eight_dp"
+                android:layout_marginLeft="@dimen/eight_dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@{@string/author_name(model.authorName)}"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/date_published"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/word_definition" />
+
+
+            <TextView
+                android:id="@+id/date_published"
+                android:layout_width="244dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="@dimen/eight_dp"
+                android:layout_marginEnd="@dimen/eight_dp"
+                android:text="@{@string/word_written(model.writtenOn)}"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/down_votes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.315"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/author_text_view" />
+
+            <TextView
+                android:id="@+id/up_votes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:drawableStart="@drawable/ic_thumb_up_green"
+                android:drawableLeft="@drawable/ic_thumb_up_green"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:padding="1dp"
+                android:text="@{String.valueOf(model.thumbsUpNumber)}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/down_votes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date_published"
+                tools:text="tem" />
+
+            <TextView
+                android:id="@+id/down_votes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_thumb_down_red"
+                android:drawableLeft="@drawable/ic_thumb_down_red"
+                android:drawablePadding="8dp"
+                android:gravity="start|center_vertical"
+                android:padding="1dp"
+                android:text="@{String.valueOf(model.thumbsDownNumber)}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/up_votes"
+                app:layout_constraintTop_toBottomOf="@+id/date_published"
+                tools:text="tem" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
+

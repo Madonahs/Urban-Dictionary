@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Urban Dictionary</string>
+    <string name="image_ic_dictionary">Ic Dictionary Image</string>
+    <string name="open_urban_dictionary">Open Dictionary</string>
+    <string name="description">Urban Dictionary is a crowdsourced online dictionary for slang words and phrases.</string>
+    <string name="enter_word">Enter word</string>
+    <string name="search">search</string>
+    <string name="author_name">Author : %s</string>
+    <string name="word_written">Written on : %s</string>
+    <string name="up_votes">Up Votes image</string>
+    <string name="down_votes">Down Votes Image</string>
+    <string name="add_to_favorite">Favorites</string>
+    <string name="sort">Sort By</string>
+    <string name="definition">Word Definition</string>
+    <string name="network_issue">Check your connection</string>
+    <string name="try_again">Please try again</string>
+    <string name="define">Definition:</string>
+    <string name="author">The Author:</string>
+    <string name="sample">Sample:</string>
+    <string name="published_on">Published On</string>
+    <string name="thumbs">thumbs images</string>
+    <string name="more">more</string>
+    <string name="share">Urban Dictionary</string>
+    <string name="thumbs_up">thumbsUp</string>
+    <string name="thumbs_down">thumbsDown</string>
+    <string name="sort_up">Sort By</string>
+    <string name="sort_down">Thumbs Down</string>
+    <string name="sort_by_upvotes">Thumbs Up</string>
+    <string name="sort_by_downvotes">Thumbs Down</string>
+    <string name="create_new_word">Sorry word does not exist, you can create it :)</string>
+
+</resources>
