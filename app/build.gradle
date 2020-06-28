@@ -71,17 +71,17 @@ dependencies {
     implementation "org.koin:koin-core-ext:$koin_org"
     implementation "org.koin:koin-androidx-scope:$koin_org"
     implementation "org.koin:koin-androidx-viewmodel:$koin_org"
+
     //retrofit for networking
     implementation "com.squareup.retrofit2:retrofit:$retrofit"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit"
-    implementation 'androidx.room:room-runtime:2.2.5'
-    // Room
-    implementation "android.arch.persistence.room:runtime:1.1.1"
-    kapt "android.arch.persistence.room:compiler:1.1.1"
+
+
     // Testing
     testImplementation "junit:junit:$JUnit"
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.arch.core:core-testing:2.1.0'
+
     //mockito
     androidTestImplementation "org.mockito:mockito-android:$mockito"
     testImplementation "org.mockito:mockito-core:$mockito"
