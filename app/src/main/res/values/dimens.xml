@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="sixteen_dp">16dp</dimen>
     <dimen name="eight_dp">8dp</dimen>
+    <dimen name="sixteen_dp">16dp</dimen>
     <dimen name="ten_dp">10dp</dimen>
     <dimen name="twenty_six_dp">26dp</dimen>
     <dimen name="top_margin">84dp</dimen>
@@ -11,4 +11,33 @@
     <dimen name="six_dp">6dp</dimen>
     <dimen name="cardview_elevation">4dp</dimen>
     <dimen name="layout_margin">8dp</dimen>
+    <dimen name="four_dp">4dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+    <dimen name="thirty_two_dp">32dp</dimen>
+    <dimen name="twenty_eight_dp">28dp</dimen>
+    <dimen name="two_forty_four_dp">244dp</dimen>
+    <dimen name="three_dp">3dp</dimen>
+    <dimen name="fifty_dp">50dp</dimen>
+    <dimen name="two_seventy_two_dp">272dp</dimen>
+    <dimen name="one_eight_nine_dp">189dp</dimen>
+    <dimen name="sixty_two_dp">62dp</dimen>
+    <dimen name="welcome_dp">329dp</dimen>
+    <dimen name="linear_layout_dp">363dp</dimen>
+    <dimen name="ninety_nine">99dp</dimen>
+    <dimen name="image_view_dp">130dp</dimen>
+    <dimen name="eighty_dp">80dp</dimen>
+    <dimen name="fifteen_dp">15dp</dimen>
+    <dimen name="sixty_nine_dp">69dp</dimen>
+    <dimen name="one_thirty_six_dp">136dp</dimen>
+    <dimen name="two_dp">2dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="seventy_eight_dp">78dp</dimen>
+    <dimen name="eighteen_dp">18dp</dimen>
+    <dimen name="two_eighty_eight_dp">288dp</dimen>
+    <dimen name="three_hundred_four_dp">304dp</dimen>
+    <dimen name="twenty_two">22dp</dimen>
+    <dimen name="one_zero_one_dp">101dp</dimen>
+    <dimen name="one_ninety_dp">190dp</dimen>
+    <dimen name="fifty_two_dp">52dp</dimen>
+    <dimen name="sixty_dp">60dp</dimen>
 </resources>

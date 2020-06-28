@@ -31,21 +31,19 @@
         <!--Recycler view -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_word"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginRight="1dp"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="@dimen/zero_dp"
+            android:layout_marginStart="@dimen/one_dp"
+            android:layout_marginLeft="@dimen/one_dp"
+            android:layout_marginTop="@dimen/one_dp"
+            android:layout_marginEnd="@dimen/one_dp"
+            android:layout_marginRight="@dimen/one_dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/progress_search_bar"
             app:layout_constraintVertical_bias="0.473" />
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

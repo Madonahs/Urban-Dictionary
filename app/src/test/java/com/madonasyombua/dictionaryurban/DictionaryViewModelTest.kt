@@ -5,7 +5,6 @@ import com.madonasyombua.dictionaryurban.data.response.BaseResponse
 import com.madonasyombua.dictionaryurban.data.response.Word
 import com.madonasyombua.dictionaryurban.ui.viewmodels.DictionaryViewModel
 import org.junit.Before
-import org.junit.Rule
 import org.junit.Test
 import org.mockito.InjectMocks
 import org.mockito.Mock

@@ -7,33 +7,29 @@
         <variable
             name="model"
             type="com.madonasyombua.dictionaryurban.data.response.Word" />
-
-
     </data>
-
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/layout_margin"
-        app:cardCornerRadius="6dp"
-        app:cardElevation="8dp">
+        app:cardCornerRadius="@dimen/six_dp"
+        app:cardElevation="@dimen/eight_dp">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="189dp"
             android:background="?android:attr/selectableItemBackground"
-            android:padding="8dp">
+            android:padding="@dimen/eight_dp">
 
             <TextView
                 android:id="@+id/word_definition"
                 android:layout_width="272dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="@dimen/four_dp"
                 android:layout_marginEnd="@dimen/eight_dp"
                 android:layout_marginRight="@dimen/eight_dp"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="@dimen/three_dp"
                 android:lines="2"
                 android:text="@{model.definition}"
                 android:textColor="@color/colorPrimary"
@@ -51,9 +47,9 @@
                 android:layout_height="27dp"
                 android:layout_marginStart="@dimen/eight_dp"
                 android:layout_marginLeft="@dimen/eight_dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginTop="@dimen/three_dp"
+                android:layout_marginEnd="@dimen/eight_dp"
+                android:layout_marginRight="@dimen/eight_dp"
                 android:text="@{@string/author_name(model.authorName)}"
                 android:textSize="12sp"
                 android:textStyle="italic"
@@ -83,14 +79,14 @@
                 android:id="@+id/up_votes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginStart="@dimen/eight_dp"
+                android:layout_marginLeft="@dimen/eight_dp"
+                android:layout_marginTop="@dimen/eight_dp"
+                android:layout_marginEnd="@dimen/eight_dp"
+                android:layout_marginRight="@dimen/eight_dp"
                 android:drawableStart="@drawable/ic_thumb_up_green"
                 android:drawableLeft="@drawable/ic_thumb_up_green"
-                android:drawablePadding="8dp"
+                android:drawablePadding="@dimen/eight_dp"
                 android:gravity="start|center_vertical"
                 android:padding="1dp"
                 android:text="@{String.valueOf(model.thumbsUpNumber)}"
@@ -105,12 +101,12 @@
                 android:id="@+id/down_votes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/thirty_two_dp"
+                android:layout_marginLeft="@dimen/thirty_two_dp"
+                android:layout_marginTop="@dimen/eight_dp"
                 android:drawableStart="@drawable/ic_thumb_down_red"
                 android:drawableLeft="@drawable/ic_thumb_down_red"
-                android:drawablePadding="8dp"
+                android:drawablePadding="@dimen/eight_dp"
                 android:gravity="start|center_vertical"
                 android:padding="1dp"
                 android:text="@{String.valueOf(model.thumbsDownNumber)}"
