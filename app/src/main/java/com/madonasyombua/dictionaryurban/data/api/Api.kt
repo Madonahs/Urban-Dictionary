@@ -1,4 +1,4 @@
-package com.madonasyombua.dictionaryurban.api
+package com.madonasyombua.dictionaryurban.data.api
 
 import com.madonasyombua.dictionaryurban.BuildConfig
 import com.madonasyombua.dictionaryurban.data.response.BaseResponse

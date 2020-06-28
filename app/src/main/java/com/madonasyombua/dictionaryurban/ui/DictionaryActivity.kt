@@ -12,9 +12,9 @@ import androidx.appcompat.widget.SearchView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.madonasyombua.dictionaryurban.R
-import com.madonasyombua.dictionaryurban.api.ERROR_STATUS
-import com.madonasyombua.dictionaryurban.api.Intent1
-import com.madonasyombua.dictionaryurban.api.observeWith
+import com.madonasyombua.dictionaryurban.data.api.ERROR_STATUS
+import com.madonasyombua.dictionaryurban.data.api.Intent1
+import com.madonasyombua.dictionaryurban.data.api.observeWith
 import com.madonasyombua.dictionaryurban.data.response.Word
 import com.madonasyombua.dictionaryurban.databinding.ActivityDictionaryBinding
 import com.madonasyombua.dictionaryurban.ui.adapter.DictionaryAdapter
@@ -46,6 +46,7 @@ class DictionaryActivity : AppCompatActivity() {
             }
         })
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
         val searchItem = menu?.findItem(R.id.action_search)
@@ -66,20 +67,13 @@ class DictionaryActivity : AppCompatActivity() {
 
         return super.onCreateOptionsMenu(menu)
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.thumbs_up_sort ->{
-                dictionaryViewModel.sortByThumbsUp()
-                return true
-            }
-            R.id.thumbs_down_sort ->{
-                dictionaryViewModel.sortByThumbsDown()
-                return true
-            }
-        }
 
         return super.onOptionsItemSelected(item)
     }
+
+    //on success
     private fun onSuccess(data: List<Word>){
         display(this)
         dictionaryAdapter.addWord(data)
@@ -93,11 +87,13 @@ class DictionaryActivity : AppCompatActivity() {
         }
         methodManager.hideSoftInputFromWindow(view.windowToken, 0)
     }
+
     private fun onProgress(isShown: Boolean){
         progress_search_bar.visibility =
             if(isShown) View.VISIBLE
             else View.GONE
     }
+
     private fun onError(errorHelper: ErrorHelper) = when (errorHelper.errorStatus) {
         ERROR_STATUS.ERR -> {
             Toast.makeText(this, getString(R.string.create_new_word), Toast.LENGTH_SHORT).show()

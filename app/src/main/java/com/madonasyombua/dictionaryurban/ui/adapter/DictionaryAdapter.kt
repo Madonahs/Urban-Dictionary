@@ -13,6 +13,7 @@ import com.madonasyombua.dictionaryurban.databinding.WordAdapterBinding
  * but the developer is certain that the variable will not be null when accessing it,
  * thus avoiding null checks when referencing it later.
  */
+
 class DictionaryAdapter : RecyclerView.Adapter<DictionaryAdapter.DictionaryBindingHolder>(){
 
     private lateinit var listener : OnItemClickListener

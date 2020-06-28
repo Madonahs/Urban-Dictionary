@@ -1,4 +1,4 @@
-package com.madonasyombua.dictionaryurban.api
+package com.madonasyombua.dictionaryurban.data.api
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.OkHttpClient

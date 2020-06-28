@@ -1,6 +1,6 @@
 package com.madonasyombua.dictionaryurban.utils;
 
-import com.madonasyombua.dictionaryurban.api.ERROR_STATUS;
+import com.madonasyombua.dictionaryurban.data.api.ERROR_STATUS;
 
 public class ErrorHelper extends Throwable{
     private ERROR_STATUS errorStatus;

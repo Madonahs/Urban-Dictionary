@@ -38,7 +38,6 @@ class DictionaryViewModel(private val  useCases: UseCases): ViewModel() {
        onResult(result)
     }
 
-
     private fun onResult(results: Results<BaseResponse>) {
         progress.postValue(false)
         when (results) {
@@ -55,21 +54,6 @@ class DictionaryViewModel(private val  useCases: UseCases): ViewModel() {
     val progress = MutableLiveData<Boolean>()
     fun progress(): MutableLiveData<Boolean> {
         return progress
-    }
-
-    fun sortByThumbsUp(){
-        val listOfWord = mutableLiveData.value?.toMutableList()
-        listOfWord?.sortByDescending { it.thumbsUpNumber }//unwrapping
-        Timber.d("Sort Thumbs up $listOfWord") // logs
-        mutableLiveData.postValue(listOfWord)
-
-    }
-
-    fun sortByThumbsDown(){
-        val listOfWords = mutableLiveData.value?.toMutableList()
-        listOfWords?.sortByDescending { it.thumbsDownNumber }
-        Timber.d("Sort Thumbs Down $listOfWords")
-        mutableLiveData.postValue(listOfWords)
     }
 
 }

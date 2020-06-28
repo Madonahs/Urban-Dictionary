@@ -1,4 +1,4 @@
-package com.madonasyombua.dictionaryurban.api
+package com.madonasyombua.dictionaryurban.data.api
 
 import android.content.Context
 import android.content.Intent
