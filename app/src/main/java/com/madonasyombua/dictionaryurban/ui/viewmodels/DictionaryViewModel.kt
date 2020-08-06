@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.madonasyombua.dictionaryurban.data.UseCases
+
 import com.madonasyombua.dictionaryurban.data.repository.Repository
 import com.madonasyombua.dictionaryurban.data.response.BaseResponse
 import com.madonasyombua.dictionaryurban.data.response.Results
@@ -21,7 +21,7 @@ import timber.log.Timber
  *  deserialized, not for potentially large amounts of data like a list of users or bitmaps.
  */
 
-class DictionaryViewModel(private val  useCases: UseCases): ViewModel() {
+class DictionaryViewModel(private val  useCases: Repository): ViewModel() {
     private val mutableLiveData = MutableLiveData<List<Word>>()
 
     val uiModel: LiveData<List<Word>>

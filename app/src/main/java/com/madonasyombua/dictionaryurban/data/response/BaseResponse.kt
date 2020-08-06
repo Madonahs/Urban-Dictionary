@@ -6,7 +6,6 @@ import com.google.gson.annotations.SerializedName
  *
  * @ SerializedName annotation indicates the annotated member should be serialized to JSON
  * with the provided name value as its field name.
- *
  * Brief Sample of what their JSON data looks like The list has 11 items:
  * Included below:
  * "list":[10 items

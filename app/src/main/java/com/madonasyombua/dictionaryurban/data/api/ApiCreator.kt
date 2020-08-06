@@ -12,15 +12,16 @@ import retrofit2.converter.gson.GsonConverterFactory
  * Currently using Retrofit
  * */
 object ApiCreator {
-    fun <T> get(type: Class<T>): T {
-
+    private const val BASE_URL = "https://mashape-community-urban-dictionary.p.rapidapi.com/"
+    fun<T> get(type: Class<T>) : T{
         val okBuilder = OkHttpClient.Builder()
         return Retrofit.Builder()
-            .baseUrl("https://mashape-community-urban-dictionary.p.rapidapi.com/")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(CoroutineCallAdapterFactory())
+            .addCallAdapterFactory(CoroutineCallAdapterFactory()) // we can also use RXJavaAdapter Fac
             .client(okBuilder.build())
             .build()
             .create(type)
     }
+
 }

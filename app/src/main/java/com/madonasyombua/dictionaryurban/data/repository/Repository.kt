@@ -6,12 +6,17 @@ import com.madonasyombua.dictionaryurban.data.response.Results
 
 /**
  * @author Madona
+ *
  */
 
+/*
 class Repository(private val dictionaryDataSource: WordDataSource) {
-
     suspend fun definition(word: String): Results<BaseResponse> {
         return dictionaryDataSource.definition(word)
     }
-
+}*/
+class Repository (private val dictionaryDataSource: WordDataSource){
+    suspend operator fun invoke(word: String): Results<BaseResponse>{
+        return dictionaryDataSource.definition(word)
+    }
 }
